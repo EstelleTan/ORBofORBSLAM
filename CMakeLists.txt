@@ -32,5 +32,4 @@ include_directories( ${OpenCV_INCLUDE_DIRS} )
 add_executable( ORBfeatures src/main.cpp src/ORBextractor.cpp )
 
 # 链接OpenCV库
-target_link_libraries( ORBfeatures ${OpenCV_LIBS} ${PROJECT_SOURCE_DIR}/3rdparty/DBoW2/lib/libDBoW2.so
-${PROJECT_SOURCE_DIR}/3rdparty/g2o/lib/libg2o.so )
+target_link_libraries( ORBfeatures ${OpenCV_LIBS} )
